@@ -1,0 +1,44 @@
+.floating-actions {
+  position: fixed;
+  right: 24px;
+  top: 37%;
+  transform: translateY(-50%);
+  z-index: 50;
+  display: grid;
+  gap: 14px;
+}
+
+.floating-actions button {
+  width: 72px;
+  height: 56px;
+    align-items: center;
+    border: 1px solid grey;
+    min-width: 50px;
+    min-height: 40px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    margin: 2px;
+    border: 1px solid rgb(174, 173, 173) ;
+    border-radius:10px ;
+    background-color: rgba(252, 252, 252, 0.902);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.25s ease;
+}
+
+.floating-actions button:hover{
+   color: rgb(87, 86, 86); 
+   /* font-size: larger; */
+   transform: scale(1.1);
+   border: 1px solid rgb(104, 103, 103) ;
+   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+   cursor: pointer;
+}
+
+
+
+@media (max-width: 1200px) {
+  .floating-actions {
+    display: none;
+  }
+}
