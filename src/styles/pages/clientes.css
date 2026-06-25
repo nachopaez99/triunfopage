@@ -6,7 +6,7 @@
 }
 
 .clientes-hero {
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 190px 24px 96px;
   background:
     linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.82)),
