@@ -31,7 +31,7 @@
 
 .quick-access__card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 10px 26px rgba(1, 102, 70, 0.377);
 }
 
 /* .quick-access__icon {
