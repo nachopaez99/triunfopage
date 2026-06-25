@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { navigationItems } from "../data/navigationData";
 import { assetsData } from "../data/assetsData";
 import "../styles/layouts/header.css";
@@ -13,23 +13,23 @@ function Header() {
       </div>
 
       <div className="header__content">
-        <Link to="/" className="header__logo">
+        <NavLink to="/" className="header__logo">
           <img src={assetsData.imagotipoBlanco} alt="" />
-        </Link>
+        </NavLink>
 
         <nav className="header__nav">
           {navigationItems.map((item) => (
             <div key={item.id} className="header__nav-item">
-              <Link to={item.path} className="header__nav-link">
+              <NavLink to={item.path} className="header__nav-Link">
                 {item.label}
-              </Link>
+              </NavLink>
 
               {item.dropdown && (
                   <div className="header__dropdown">
                     {item.dropdown.map((link) => (
-                      <Link key={link.path} to={link.path}>
+                      <NavLink key={link.path} to={link.path}>
                         {link.label}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
               )}

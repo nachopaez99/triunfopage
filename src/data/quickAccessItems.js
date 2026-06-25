@@ -1,20 +1,22 @@
+import { assetsData } from "./assetsData";
+
 export const quickAccessItems = [
   {
     id: "personas",
     title: "Personas",
     path: "/personas",
-    icon: "✦",
+    icon: assetsData.isoPersonas,
   },
   {
     id: "empresas",
     title: "Empresas",
     path: "/empresas",
-    icon: "▦",
+    icon: assetsData.isoEmpresas,
   },
   {
     id: "filiales",
     title: "Filiales",
-    path: "/filiales",
-    icon: "⌖",
+    path: "/empresas",
+    icon: assetsData.isoFiliales,
   },
 ];

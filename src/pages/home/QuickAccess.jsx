@@ -24,7 +24,7 @@ function QuickAccess() {
             className="quick-access__card"
             onClick={() => handleAccessClick(item)}
           >
-            <span className="quick-access__icon">{item.icon}</span>
+            <span className="quick-access__icon"><img src={item.icon} alt="" /></span>
             <span className="quick-access__title">{item.title}</span>
           </Link>
         ))}

@@ -4,7 +4,7 @@
   min-height: 600px;
   padding: 20px;
   border-radius: 22px;
-  background: var(--color-primary);
+  background-color: color-mix(in srgb, var(--color-primary) 70%, transparent);
   color: var(--color-white);
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
   z-index: 2;
@@ -95,12 +95,12 @@
   border: 2px solid transparent;
   border-radius: 14px;
   background: var(--color-white);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-weight: 800;
   cursor: pointer;
   display: grid;
   place-items: center;
-  gap: 4px;
+  /* gap: 4px; */
   box-shadow: 0 8px 18px rgba(8, 120, 79, 0.12);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
@@ -111,8 +111,9 @@
   border-color: rgba(8, 120, 79, 0.35);
 }
 
-.main-form__product span {
+.main-form__product span img{
   font-size: 22px;
+  width: 50px;
 }
 
 .main-form__product--selected {

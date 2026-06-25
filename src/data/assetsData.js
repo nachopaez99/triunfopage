@@ -12,6 +12,11 @@ import isotipoVerde from  "../assets/isotipo-verde.png"
 import iconoPDP from  "../assets/icono-pdp.png"
 import iconoSSN from  "../assets/ssn_2026_logo.png"
 import iconoDataFiscal from  "../assets/icono-data-fiscal.png"
+import iconoMoto from "../assets/moto.png"
+import iconoBolso from "../assets/bolso.png"
+import iconoHogar from "../assets/hogar.png"
+import iconoAuto from "../assets/Auto.png"
+
 
 
 
@@ -34,5 +39,9 @@ export const assetsData = {
     bcgPersonas,
     iconoDataFiscal,
     iconoPDP,
-    iconoSSN
+    iconoSSN,
+    iconoMoto,
+    iconoBolso,
+    iconoHogar,
+    iconoAuto
 }

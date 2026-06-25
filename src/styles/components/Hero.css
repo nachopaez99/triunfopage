@@ -23,13 +23,15 @@
 }
 
 .hero__content {
-  max-width: 1280px;
+ /*  max-width: 1280px; */
   margin: 0 auto;
   padding: 48px 130px 80px 32px;
-  display: grid;
+  display: flex;
   grid-template-columns: minmax(0, 1fr) 390px;
   gap: 52px;
   align-items: center;
+  justify-content: space-evenly;
+  
 }
 
 .hero__text h1 {
