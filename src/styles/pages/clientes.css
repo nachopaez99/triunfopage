@@ -1,5 +1,4 @@
 .clientes-page {
-
   min-height: 90vh;
   padding: 250px 28px 80px;
   background: #ffffff;
@@ -7,7 +6,7 @@
 }
 
 .clientes-hero {
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 190px 24px 96px;
   background:
     linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.82)),
