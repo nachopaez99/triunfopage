@@ -96,7 +96,7 @@ function MainForm() {
                   }`}
                   onClick={() => handleProductSelect(product.id)}
                 >
-                  <span>{product.icon}</span>
+                  <span><img src={product.icon} alt="" /></span>
                   {product.label}
                 </button>
               ))}
@@ -132,15 +132,15 @@ function MainForm() {
 
         {currentStep === 2 && (
           <div className="main-form__step-content">
-            <h3>Datos adicionales</h3>
-            <p>Este paso queda preparado para completar luego.</p>
+            <h3>Datos faltantes</h3>
+            <p>A definir...</p>
           </div>
         )}
 
         {currentStep === 3 && (
           <div className="main-form__step-content">
-            <h3>Confirmación</h3>
-            <p>Revisá los datos antes de enviar la cotización.</p>
+            <h3>Premio final y confirmacion</h3>
+            <p>....</p>
           </div>
         )}
 

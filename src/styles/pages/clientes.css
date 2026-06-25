@@ -1,175 +1,184 @@
 .clientes-page {
+<<<<<<< HEAD
   min-height: 90vh;
   padding: 250px 28px 80px;
   background: #ffffff;
+=======
+  /* min- */height: 90vh;
+>>>>>>> testing
 }
 
-.clientes-login {
-  max-width: 1680px;
-  min-height: 560px;
+.clientes-hero {
+  min-height: 100vh;
+  padding: 190px 24px 96px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.82)),
+    url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.clientes-hero__content {
+  max-width: 1240px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.6fr) minmax(420px, 0.4fr);
-  overflow: hidden;
-  border-radius: 18px;
-  background: #ffffff;
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.22);
+  grid-template-columns: minmax(0, 1fr) 430px;
+  gap: 72px;
+  align-items: center;
 }
 
-.clientes-login__form-panel {
-  padding: 34px 38px 52px;
-  background: #ffffff;
-  position: relative;
-  z-index: 2;
+.clientes-hero__text {
+  max-width: 620px;
 }
 
-.clientes-login__form-panel h1 {
-  margin: 0 0 30px;
-  color: #007f4f;
-  font-size: 22px;
+.clientes-hero__text span {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--color-primary);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.clientes-hero__text h1 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: clamp(46px, 6vw, 82px);
+  line-height: 1.05;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+.clientes-hero__text p {
+  max-width: 520px;
+  margin: 22px 0 0;
+  color: #4b5563;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.clientes-login-card {
+  padding: 34px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(8px);
+}
+
+.clientes-login-card h2 {
+  margin: 0 0 28px;
+  color: var(--color-primary);
+  font-size: 28px;
   font-weight: 900;
 }
 
-.clientes-form {
-  max-width: 940px;
-}
-
-.clientes-form__group {
-  margin-bottom: 34px;
-}
-
-.clientes-form__group label {
+.clientes-login-card label {
   display: block;
-  margin-bottom: 12px;
-  color: #007f4f;
+  margin: 18px 0 10px;
+  color: var(--color-primary);
   font-weight: 900;
 }
 
-.clientes-form__document-row {
+.clientes-login-card__document {
   display: grid;
-  grid-template-columns: 230px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 120px 1fr;
+  gap: 10px;
+}
+.clientes-login-card__document select {
+  cursor:pointer;
 }
 
-.clientes-form select,
-.clientes-form input {
+.clientes-login-card input,
+.clientes-login-card select {
   width: 100%;
-  height: 40px;
-  padding: 0 24px;
-  border: 1.5px solid #007f4f;
+  height: 46px;
+  padding: 0 16px;
+  border: 1.5px solid var(--color-primary);
   border-radius: 999px;
   background: #ffffff;
-  color: #4b5563;
   font: inherit;
   outline: none;
 }
 
-.clientes-form select {
-  padding-right: 44px;
-  color: #007f4f;
+.clientes-login-card input:focus,
+.clientes-login-card select:focus {
+  box-shadow: 0 0 0 4px rgba(8, 120, 79, 0.14);
 }
 
-.clientes-form__password {
-  position: relative;
-}
-
-.clientes-form__password input {
-  padding-right: 56px;
-}
-
-.clientes-form__password button {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  width: 34px;
-  height: 34px;
-  border: 0;
-  border-radius: 50%;
-  background: transparent;
-  color: #007f4f;
-  font-size: 18px;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.clientes-form__recovery {
+.clientes-login-card a {
   display: inline-block;
-  margin: 2px 0 24px;
-  color: #007f4f;
+  margin: 22px 0;
+  color: var(--color-primary);
   font-weight: 900;
 }
 
-.clientes-form__submit,
-.clientes-form__register {
-  display: block;
-  width: 280px;
-  height: 50px;
+.clientes-login-card__submit,
+.clientes-login-card__register {
+  width: 100%;
+  height: 48px;
   border: 0;
   border-radius: 999px;
-  color: #ffffff;
-  font-size: 18px;
+  /* color: #ffffff; */
   font-weight: 900;
   cursor: pointer;
-  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
-.clientes-form__submit {
-  background: #08784f;
-  margin-bottom: 26px;
+.clientes-login-card__submit {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  /* background-color: #F0F0F0; */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+
 }
 
-.clientes-form__register-text {
-  margin: 0 0 20px;
-  color: #007f4f;
+.clientes-login-card__submit:hover {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: #f0f0f0d3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(198, 198, 198, 0.2);
+}
+
+.clientes-login-card p {
+  margin: 24px 0 14px;
+  color: var(--color-primary);
   font-weight: 900;
 }
 
-.clientes-form__register {
-  background: #4b3b83;
+.clientes-login-card__register {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+.clientes-login-card__register:hover {
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+  background-color: #f0f0f0d3;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(198, 198, 198, 0.2);
 }
 
-.clientes-login__image-panel {
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)),
-    url("https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=1400&auto=format&fit=crop");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
 
-.clientes-login__image-panel::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(120, 120, 120, 0.18);
-}
-
-@media (max-width: 1000px) {
-  .clientes-login {
+@media (max-width: 950px) {
+  .clientes-hero__content {
     grid-template-columns: 1fr;
   }
 
-  .clientes-login__image-panel {
-    min-height: 260px;
-    order: -1;
-  }
-
-  .clientes-form__document-row {
-    grid-template-columns: 1fr;
+  .clientes-login-card {
+    max-width: 520px;
   }
 }
 
 @media (max-width: 600px) {
-  .clientes-page {
-    padding: 96px 16px 56px;
+  .clientes-hero {
+    padding: 150px 16px 72px;
   }
 
-  .clientes-login__form-panel {
-    padding: 28px 20px 38px;
+  .clientes-login-card {
+    padding: 24px;
   }
 
-  .clientes-form__submit,
-  .clientes-form__register {
-    width: 100%;
+  .clientes-login-card__document {
+    grid-template-columns: 1fr;
   }
 }
