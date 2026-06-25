@@ -15,7 +15,7 @@ import iconoDataFiscal from  "../assets/icono-data-fiscal.png"
 import iconoMoto from "../assets/moto.png"
 import iconoBolso from "../assets/bolso.png"
 import iconoHogar from "../assets/hogar.png"
-import iconoAuto from "../assets/Auto.png"
+import iconoAuto from "../assets/auto.png"
 
 
 
